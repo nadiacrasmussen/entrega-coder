@@ -116,16 +116,17 @@ header {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    transition: transform 0.7s ease;
+    transition: transform all .5s  ease;
 }
 
 .ambientes {
+    overflow: hidden;
     position: relative;
     display: inline-block;
     margin: 50px;
     box-shadow: 7px 7px 7px rgb(167, 167, 167);
 }
-.ambientes:hover {
+.ambientes:hover img {
     transform: scale(1.2);
 }
 
@@ -203,6 +204,27 @@ header {
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: $color;
     --bs-btn-disabled-border-color: $color;
+}
+/*tu estulo*/
+.galeria{
+    justify-content: center;
+    width: 100%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   row-gap: 0.5rem;
+   column-gap: 0.5rem;
+}
+
+
+.estilos{
+    width: 100%;
+}
+.estilos img{
+    margin: 20px;
+    border-radius: 5px;
+    height: 300px;
+    max-width: 400px;
 }
 
 .image-container {
