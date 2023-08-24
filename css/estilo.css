@@ -165,24 +165,6 @@ header {
   height: 110px;
   width: 3px; }
 
-/*Productos*/
-.solicitud {
-  background-color: #a91815;
-  --bs-btn-color: #fff;
-  --bs-btn-bg: $color;
-  --bs-btn-border-color: d$color;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: black;
-  --bs-btn-hover-border-color: $color;
-  --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: $color;
-  --bs-btn-active-border-color: $color;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: $color;
-  --bs-btn-disabled-border-color: $color; }
-
 /*tu estilo*/
 .galeria {
   display: grid;
@@ -213,8 +195,26 @@ header {
   margin: 20px;
   border-radius: 5px;
   height: 400px;
-  width: 500px;
+  width: 600px;
   object-fit: cover; }
+
+/*Productos*/
+.solicitud {
+  background-color: #a91815;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: $color;
+  --bs-btn-border-color: d$color;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: black;
+  --bs-btn-hover-border-color: $color;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: $color;
+  --bs-btn-active-border-color: $color;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: $color;
+  --bs-btn-disabled-border-color: $color; }
 
 .image-container {
   margin: 50px;
@@ -224,6 +224,9 @@ header {
   flex-wrap: wrap;
   gap: 25px;
   justify-content: space-evenly; }
+
+.card {
+  box-shadow: 7px 7px 7px #a7a7a7; }
 
 .producto {
   width: 400px;
