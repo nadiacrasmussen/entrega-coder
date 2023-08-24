@@ -99,7 +99,7 @@ header {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  transition: transform all .5s  ease; }
+  transition: transform all 0.5s ease; }
 
 .ambientes {
   overflow: hidden;
@@ -183,24 +183,38 @@ header {
   --bs-btn-disabled-bg: $color;
   --bs-btn-disabled-border-color: $color; }
 
-/*tu estulo*/
+/*tu estilo*/
 .galeria {
-  justify-content: center;
-  width: 100%;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 0.5rem;
-  column-gap: 0.5rem; }
+  gap: 10px;
+  padding: 20px; }
+
+.titulos {
+  color: white;
+  grid-column: span 3;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: #a91815; }
 
 .estilos {
-  width: 100%; }
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px; }
 
 .estilos img {
+  box-shadow: 5px 5px 5px #a7a7a7;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
   margin: 20px;
   border-radius: 5px;
-  height: 300px;
-  max-width: 400px; }
+  height: 400px;
+  width: 500px;
+  object-fit: cover; }
 
 .image-container {
   margin: 50px;
@@ -464,6 +478,20 @@ header {
   .carousel img {
     height: 300px;
     object-fit: fill; }
+  /*estilo*/
+  .galeria {
+    grid-template-columns: repeat(1, 1fr); }
+  .titulos {
+    grid-column: span 1; }
+  .estilos {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; }
+  .estilos img {
+    margin: 10px;
+    object-fit: cover;
+    height: 300px;
+    width: 400px; }
   .elementos {
     justify-content: center;
     align-items: center;
