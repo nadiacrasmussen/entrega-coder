@@ -1,0 +1,102 @@
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px 10px;
+
+    grid-auto-flow: row;
+}
+
+.form-contacto {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.form-contacto {
+    height: 100%;
+    font-size: 16px;
+    border-bottom: #f1f1f1;
+    width: auto;
+    background-image: url(../img/revestimientos/DSC_0109_2.JPG);
+    box-shadow: $sombras;
+    border-radius: $borde;
+    color: white;
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+
+    .label-contacto {
+        max-width: 40%;
+        display: block;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .formulario,
+    textarea {
+        margin-bottom: 20px;
+        width: 60%;
+        padding: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 3px solid #753535;
+    }
+
+    .formulario[type="submit"]:hover {
+        background: #f0e7e7;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    textarea {
+        resize: none;
+        min-height: 100px;
+    }
+}
+
+.preguntas-frecuentes {
+    height: 100%;
+    padding: 30px;
+    width: 700px;
+    display: flex;
+    background-color: #ffffff;
+    margin-right: 200px;
+    flex-direction: column;
+    box-shadow: 7px 7px 7px rgb(167, 167, 167);
+}
+
+.contacto {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+@media screen and (max-width: 480px) {
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "form-contacto"
+            "preguntas-frecuentes";
+    }
+
+    .form-contacto {
+        max-width: 310px;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .preguntas-frecuentes {
+        padding: 30px;
+        width: 300px;
+        display: flex;
+        background-color: #ffffff;
+        margin-right: 200px;
+        flex-direction: column;
+        box-shadow: $sombras;
+    }
+    .contacto {
+        display: initial;
+    }
+}

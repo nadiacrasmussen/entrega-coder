@@ -1,0 +1,107 @@
+@import "./componentes/variables";
+
+header {
+    width: 100%;
+    .promo {
+        margin: 0;
+        background-color: rgb(20, 20, 20);
+        color: #f1f1f1;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+    }
+    .container-kamak {
+        line-height: 100vh;
+        padding: 30px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .logo {
+            height: 120px;
+        }
+    }
+}
+.d-flex {
+    font-size: small;
+    height: 30px;
+    box-shadow: 2px 2px 2px rgb(221, 100, 100);
+    margin-right: 400px;
+    justify-content: center;
+    border-radius: 50px;
+    min-width: 40%;
+    .form-control {
+        padding: 0.5rem;
+    }
+}
+.colorBoton {
+    font-size: small;
+    height: 30px;
+    background-color: #fdf8f8;
+    border-radius: 50px;
+    --bs-btn-color: rgb(10, 10, 10);
+    --bs-btn-border-color: #0a0a0a;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #050505;
+    --bs-btn-hover-border-color: #080808;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #0a0a0a;
+    --bs-btn-active-bg: rgb(14, 13, 13);
+    --bs-btn-active-border-color: rgb(14, 13, 13);
+    --bs-btn-active-shadow: inset 0 3px 5px;
+}
+
+.menu2 {
+    display: flex;
+    justify-content: center;
+    box-shadow: 7px 7px 7px rgb(167, 167, 167);
+    font-family: "Roboto", sans-serif;
+    background-color: $color;
+    nav {
+        line-height: 50px;
+         a:hover {
+            color: $color;
+            background-color: rgb(230, 227, 227);
+            border-radius: 20px;
+            -webkit-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+            text-decoration: none;
+        }
+    
+    }
+
+ 
+    nav a {
+        display: inline-block;
+        color: #fdf8f8;
+        text-decoration: none;
+        padding: 10px 20px;
+        line-height: normal;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .bg-body-tertiary {
+        --bs-bg-opacity: 0;
+    }
+
+    .navbar-brand {
+        color: #fff;
+    }
+}
+.cart-icon {
+    height: 60px;
+}
+@media screen and (max-width: 480px){
+    .container-kamak {
+        flex-direction: column;
+        .logo {
+            height: 80px;
+        }
+    }
+
+    .d-flex {
+        margin-right: 5px;
+    }
+
+}

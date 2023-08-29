@@ -1,0 +1,8 @@
+$color: rgb(169, 24, 21);
+$sombras:7px 7px 7px rgb(167, 167, 167);
+$borde: 5px;
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}

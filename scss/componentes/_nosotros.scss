@@ -1,0 +1,46 @@
+@import "./componentes/variables";
+.primera-seccion,
+.segunda-seccion {
+    display: flex;
+    justify-content: space-evenly;
+}
+.izquierda,
+.derecha {
+    width: 40%;
+  @include flex-column;
+    justify-content: space-evenly;
+}
+.nosotros {
+    align-content: center;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    .foto-local {
+        display: flex;
+        height: 500px;
+    }
+    .nosotros-img {
+        justify-content: center;
+        height: 400px;
+        display: flex;
+    }
+}
+@media screen and (max-width: 480px) {
+    .primera-seccion {
+        flex-direction: column;
+    }
+    .segunda-seccion {
+        flex-direction: column-reverse;
+    }
+    .izquierda,
+    .derecha {
+        width: 100%;
+    }
+    .nosotros-img,
+    .fotolocal {
+        overflow: hidden;
+    }
+    .fotolocal img{
+        object-fit: cover;
+    }
+}
