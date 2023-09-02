@@ -1,20 +1,32 @@
 @import "./componentes/variables";
 .primera-seccion,
 .segunda-seccion {
+    width: 80%;
+    border: solid 1px;
     display: flex;
     justify-content: space-evenly;
 }
 .izquierda,
 .derecha {
     width: 40%;
-  @include flex-column;
+    @include flex-column;
     justify-content: space-evenly;
 }
+.title {
+    padding: 15px;
+    text-decoration: underline;
+}
 .nosotros {
+    color: white;
+    background-color: rgb(10, 10, 10);
     align-content: center;
     margin: 20px;
     justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .foto-local {
         display: flex;
         height: 500px;
@@ -40,7 +52,7 @@
     .fotolocal {
         overflow: hidden;
     }
-    .fotolocal img{
+    .fotolocal img {
         object-fit: cover;
     }
 }

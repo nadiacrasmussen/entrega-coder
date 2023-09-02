@@ -1,0 +1,37 @@
+@import "./componentes/variables";
+.pared {
+    background-image: url(../../img/404/pared.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+    color: #ffffff;
+    height: 75vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error-container{
+    height: auto;
+    color: $color;
+   text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 100px;
+    margin: 20px;
+   .titulo{
+    margin: 15px;
+    font-size: 7rem;
+   }
+   .comentario{
+    font-size: 1rem;
+    margin-bottom: 30px;
+   }
+   .link{
+    color: black;
+    padding: 10px;
+   }
+
+}

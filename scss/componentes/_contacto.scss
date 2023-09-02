@@ -16,7 +16,7 @@
     font-size: 16px;
     border-bottom: #f1f1f1;
     width: auto;
-    background-image: url(../img/revestimientos/DSC_0109_2.JPG);
+    background-image: url(../img/productos/DSC_0109_2.JPG);
     box-shadow: $sombras;
     border-radius: $borde;
     color: white;
@@ -39,7 +39,7 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        border: 3px solid #753535;
+        border: 1px solid white;
     }
 
     .formulario[type="submit"]:hover {

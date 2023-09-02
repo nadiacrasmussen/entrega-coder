@@ -1,17 +1,32 @@
 @import "./componentes/variables";
+.intro{
+    font-size: 2rem;
+    display: flex;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: antiquewhite;
+    margin-top: 15px;
+    .tex{
+        margin: 15px;
+    }
+}
 .galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding: 20px;
+  
 }
 .titulos {
+   padding:20px;
     color: white;
     grid-column: span 3;
     text-align: center;
-    font-size: 20px;
+    font-size: 3rem;
     font-weight: bold;
-    margin-top: 20px;
+    text-decoration: underline;
     background-color: black;
     opacity: 0.7;
 }
@@ -21,7 +36,7 @@
     overflow: hidden;
     border-radius: 8px;
     img {
-        box-shadow: 5px 5px 5px rgb(167, 167, 167);
+        box-shadow:$sombras;
         display: block;
         width: 100%;
         height: auto;

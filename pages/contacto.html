@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content=" Obtén detalles de todo lo que te podemos ofrecer contactanos y comienza tu viaje hacia la excelencia en diseño de interiores y revestimientos de calidad."/>
-    <meta name="keywords" content="venta mayorista, consultas, curriculums, presupuestos,email,"/>
+    <meta name="description"
+        content=" Obtén detalles de todo lo que te podemos ofrecer contactanos y comienza tu viaje hacia la excelencia en diseño de interiores y revestimientos de calidad." />
+    <meta name="keywords" content="venta mayorista, consultas, curriculums, presupuestos,email," />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Kamak revestimientos-Contacto</title>
@@ -39,8 +40,8 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a href="../index.html" class="navbar-brand">Inicio</a>
-                            <a href="../pages/estilo.html" class="navbar-brand">Tu estilo</a>
-                            <a href="../pages/revestimientos.html" class="navbar-brand">Revestimientos</a>
+                            <a href="../pages/tuestilo.html" class="navbar-brand">Tu estilo</a>
+                            <a href="../pages/productos.html" class="navbar-brand">Productos</a>
                             <a href="../pages/nosotros.html" class="navbar-brand">Nosotros</a>
                             <a href="../pages/contacto.html" class="navbar-brand">Contacto</a>
 
@@ -74,22 +75,63 @@
             </form>
 
             <section class="preguntas-frecuentes ">
-                <h1>Preguntas frecuentes</h1>
-                <h2>¿Hacen colocaciones?</h2>
-                <p>si, hacemos colocaciones las cuales tienen DOS años de GARANTIA.</p>
-                <h2>¿Cómo es la política de Cambios y Devoluciones?</h2>
-                <p>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h1>Preguntas frecuentes</h1>
+                     
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ¿Hacen colocaciones?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Si, somos la unica empresa en Necochea que ofrece el producto
+                                con el
+                                servicio de colocacion, la cual cuenta con <code>DOS AÑOS DE GARANTIA KAMAK</code>
+                                Una vez que se haya realizado la adquisición de los productos,
+                                se
+                                procederá a la programación de una fecha que será acordada en consulta con nuestro
+                                equipo de
+                                trabajo especializado en obra. Es importante tener en cuenta que esta fecha podría
+                                experimentar modificaciones en su calendario debido a diversas circunstancias, entre las
+                                que
+                                se incluyen factores externos, como las condiciones climáticas, especialmente si la
+                                instalación se llevará a cabo en un entorno al aire libre.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                ¿Los revestimientos son para interior o exterior?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Los revestimientos simil piedra se pueden colocar tanto en interior como en exterior.</div>
+                        </div>
+                    </div>
 
-                    Si tu pedido llega con fallas de calidad o se produce algún error en el envío, te hacemos el cambio
-                    sin cargo. Si elegiste una empresa de transporte para que te enviemos el producto, y dicha empresa
-                    rompe el material, el reclamo se lo deberás realizar a la empresa de transporte.
-                </p>
-                <h2>¿Hacen envíos a todo el país?</h2>
-                <p>
-
-                    Si! Hacemos envíos a todo el país, es muy importante que aclares bien toda la información de
-                    entrega! ( nombre de la calle, numero de calle, código postal, localidad, provincia, etc.)
-                </p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                ¿Hacen presupuestos?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Si! hacemos presupuestos a domicilio y sin cargo. </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
 
@@ -119,7 +161,10 @@
     <footer>
 
 
-        <div class="wpp"> <a href="#"><img src="../img/logosredes/logo-wpp-fixed.png" alt="logo wpp"></a></div>
+        <div class="wpp"> <a href="https://wa.me/+5492262541992">
+                <img src="../img/logosredes/logo-wpp-fixed.png" alt="logo wpp">
+            </a>
+        </div>
 
 
         <form class="suscribite">
@@ -132,12 +177,17 @@
                 <button type="submit" class="btn btn-dark">Enviar</button>
             </div>
         </form>
-        
-        <div class="redes">
-            <a href="#"><img class="vector" src="../img/logosredes/logo-ig.png" alt="logo instagram" /></a>
 
-            <a href="#"><img class="vector" src="../img/logosredes/logo-fb.png" alt="logo facebook" /></a>
-            <a href="#"><img class="vector" src="../img/logosredes/logo-wpp.png" alt="logo wpp" /></a>
+        <div class="redes">
+            <a href="https://www.instagram.com/kamak.oficial/" target="_blank">
+                <img class="vector" src="../img/logosredes/logo-ig.png" alt="logo instagram" />
+            </a>
+
+            <a href="https://www.facebook.com/kamak.oficial/" target="_blank">
+                <img class="vector" src="../img/logosredes/logo-fb.png" alt="logo facebook" />
+            </a>
+            <a href="https://wa.me/+5492262482550" target="_blank"><img class="vector"
+                    src="../img/logosredes/logo-wpp.png" alt="logo wpp" /></a>
         </div>
 
         <div class="info-container">

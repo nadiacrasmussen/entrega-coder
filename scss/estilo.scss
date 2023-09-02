@@ -2,9 +2,10 @@
 @import "./componentes/header";
 @import "./componentes/tuestilo";
 @import "./componentes/nosotros";
-@import "./componentes/revestimientos";
+@import "./componentes/productos";
 @import "./componentes/contacto";
 @import "./_footer";
+@import "./componentes/404";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
     padding: 0;
@@ -30,21 +31,19 @@ body {
     }
 }
 .ambientaciones {
-    border: $borde;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     transition: transform all 0.2s ease;
 }
 .ambientes {
- 
     overflow: hidden;
     position: relative;
     display: inline-block;
     margin: 50px;
     box-shadow: 7px 7px 7px rgb(167, 167, 167);
     :hover img {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 .espacios {
@@ -79,6 +78,8 @@ body {
     flex-direction: row;
     height: 110px;
     justify-content: space-evenly;
+    margin-bottom: 15px;
+    border: 1px solid $color;
 }
 .separador {
     background-color: $color;
@@ -107,6 +108,10 @@ body {
     z-index: 100;
     position: fixed;
     right: 20px;
+}
+.pared{
+    background-image: url(../img/404/pared.jpg);
+    
 }
 
 @media screen and (max-width: 480px) {
