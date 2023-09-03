@@ -58,10 +58,9 @@
     height: 100%;
     padding: 30px;
     width: 700px;
-    display: flex;
+    @include flex-column;
     background-color: #ffffff;
     margin-right: 200px;
-    flex-direction: column;
     box-shadow: 7px 7px 7px rgb(167, 167, 167);
 }
 

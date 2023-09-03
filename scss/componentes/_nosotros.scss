@@ -1,4 +1,5 @@
 @import "./componentes/variables";
+@import "./mixin";
 .primera-seccion,
 .segunda-seccion {
     width: 80%;
@@ -30,6 +31,7 @@
     .foto-local {
         display: flex;
         height: 500px;
+       
     }
     .nosotros-img {
         justify-content: center;
@@ -51,8 +53,16 @@
     .nosotros-img,
     .fotolocal {
         overflow: hidden;
+        img{
+            object-fit: cover;
+            height: 300px;
+            width: -webkit-fill-available;
+        }
     }
     .fotolocal img {
         object-fit: cover;
+        height: 300px;
+        width: -webkit-fill-available;
     }
+
 }

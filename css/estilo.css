@@ -83,7 +83,10 @@ header {
     .container-kamak .logo {
       height: 80px; }
   .d-flex {
-    margin-right: 5px; } }
+    margin-right: 5px; }
+  .cart-icon {
+    margin: 10px;
+    height: 40px; } }
 
 .intro {
   font-size: 2rem;
@@ -192,8 +195,15 @@ header {
   .nosotros-img,
   .fotolocal {
     overflow: hidden; }
+    .nosotros-img img,
+    .fotolocal img {
+      object-fit: cover;
+      height: 300px;
+      width: -webkit-fill-available; }
   .fotolocal img {
-    object-fit: cover; } }
+    object-fit: cover;
+    height: 300px;
+    width: -webkit-fill-available; } }
 
 .image-container {
   margin: 50px;
@@ -307,9 +317,9 @@ header {
   padding: 30px;
   width: 700px;
   display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   margin-right: 200px;
-  flex-direction: column;
   box-shadow: 7px 7px 7px #a7a7a7; }
 
 .contacto {

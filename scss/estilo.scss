@@ -6,6 +6,7 @@
 @import "./componentes/contacto";
 @import "./_footer";
 @import "./componentes/404";
+@import "./componentes/mixin";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
     padding: 0;
@@ -109,13 +110,11 @@ body {
     position: fixed;
     right: 20px;
 }
-.pared{
+.pared {
     background-image: url(../img/404/pared.jpg);
-    
 }
 
 @media screen and (max-width: 480px) {
-
     .carousel {
         height: 300px;
     }
@@ -152,7 +151,6 @@ body {
         width: auto;
         @include flex-column;
         height: auto;
-       
     }
     .separador {
         direction: 1 ltr;
