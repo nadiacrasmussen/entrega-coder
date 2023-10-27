@@ -26,6 +26,7 @@
                 <button class="btn btn-outline-success colorBoton" type="submit">Buscar</button>
             </form>
             <img class="cart-icon" src="../img/logosredes/cart.svg" alt="carrito">
+            <span #carrito></span>
         </div>
 
 
@@ -46,6 +47,7 @@
                             <a href="../pages/similpiedra.html" class="navbar-brand">Simil piedra</a>
                             <a href="../pages/nosotros.html" class="navbar-brand">Nosotros</a>
                             <a href="../pages/contacto.html" class="navbar-brand">Contacto</a>
+                            <a href="../pages/mayorista.html" class="navbar-brand">Mayoristas</a>
 
 
 
@@ -88,7 +90,7 @@
         </div>
 
     </section>
-    <main class="image-container">
+    <!--    <main class="image-container">
         <div class="card" style="width: 24rem;">
             <img src="../img/productos/ardecia-ambar.webp" class="card-img-top" alt="Ardesia ambar">
             <div class="card-body">
@@ -100,7 +102,7 @@
                     <li>Uso: Exterior/Interior.</li>
                 </ul>
                 </p>
-                <a href="#" class="btn btn-primary solicitud">Solicitá tu resupuesto</a>
+                <a href="#"(onclick)="agregarCarrito('ardesia ambar')" class="btn btn-primary solicitud">Solicitá tu resupuesto</a>
             </div>
         </div>
         <div class="card" style="width: 24rem;">
@@ -114,7 +116,7 @@
                     <li>Uso: Exterior/Interior.</li>
                 </ul>
                 </p>
-                <a href="#" class="btn btn-primary  solicitud">Solicitá tu presupuesto</a>
+                <a href="#" (onclick)="agregarCarrito('ardesia ambar')"  class="btn btn-primary  solicitud">Solicitá tu presupuesto</a>
             </div>
         </div>
         <div class="card" style="width: 24rem;">
@@ -231,6 +233,29 @@
                 <a href="#" class="btn btn-primary solicitud">Solicitá tu presupuesto</a>
             </div>
         </div>
+    </main> -->
+
+
+    <main>
+
+        <h1>Te mostramos a continuacion nuestra linea de productos</h1>
+
+        <div id="productos"></div>
+
+
+        <h2> Agregue los producto</h2>
+        <form action="" id="formProductos">
+            <input type="text" placeholder="Nombre producto" id="productoInput">
+            <button type="submit">Enviar</button>
+        </form>
+
+
+
+
+        <div id="carritoDom"></div>
+        <button type="button" onclick="completarVenta(event)" >Enviar</button>
+
+
     </main>
 
     <div class="wpp">

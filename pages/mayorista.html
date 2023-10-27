@@ -12,6 +12,8 @@
     <title>Kamak revestimientos-Nosotros</title>
     <link rel="icon" type="image.png" href="../img/img-marca/logokamak.ico.ico" />
     <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+    <script defer src="../login.js"></script>
+    <script defer src="../app.js"></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
                 <input class="form-control me-5 m-2 " type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-success colorBoton" type="submit">Buscar</button>
             </form>
-            <img class="cart-icon" src="../img/logosredes/cart.svg" alt="carrito"/>
+            <img class="cart-icon" src="../img/logosredes/cart.svg" alt="carrito" />
         </div>
 
 
@@ -54,63 +56,16 @@
             </nav>
         </div>
     </header>
-
-
-    <main class="nosotros">
-        <div class="primera-seccion">
-            <div class="izquierda">
-                <h1 class="title">Nosotros</h1>
-                <p>Kamak Revestimientos te da la bienvenida como tu opción confiable para revestir tus espacios con
-                    estilo. Ofrecemos una variedad de productos, como revestimientos simil piedra, baldosas, ceramicos y 
-                    porcelanatos, que combinan tradición e innovación. Nuestro objetivo es brindar autenticidad visual y
-                    durabilidad. Te ayudamos a elegir y a instalar los revestimientos ideales para transformar tus
-                    espacios de manera única. Explora nuestro catálogo y únete a nuestra aventura creativa.</p>
-            </div>
-
-            <div class="fotolocal">
-                <img src="../img/nosotros/fotolocal.jpg" alt="Foto local" />
-            </div>
-        </div>
-        <div class="segunda-seccion">
-            <div class="nosotros-img">
-                <img src="../img/nosotros/DSC01995.JPG" alt="fabrica" />
-
-            </div>
-            <div class="derecha">
-                <h2 class="title">La fabrica</h2>
-                <p>Kamak revestimientos comenzó como una pequeña empresa en Necochea, Buenos Aires. Somos una empresa joven que, durante más de 4 años, ha sido líder en la elaboracion de productos en hormigón de alta calidad. Nos especializamos en revestimientos simil piedra, simil madera y baldosas.Cada pieza que sale de nuestra fabrica es el resultado de un proceso meticuloso que abarca desde la concepción hasta la producción, asegurando que nuestros clientes reciban productos que superen sus expectativas en términos de diseño y durabilidad.
-                    Nos enorgullece ser parte de la comunidad de Necochea y contribuir al desarrollo arquitectónico y estético de la región. Gracias a ustedes hemos logrado crecer y poder establecernos. 
-                    Te invitamos a explorar nuestro catálogo y descubrir la diversidad de opciones que ofrecemos. Ya sea que estés buscando transformar un espacio residencial o comercial, en KAMAK REVESTIMIENTOS tenemos la solución perfecta en hormigón. Esperamos tener la oportunidad de trabajar contigo y hacer realidad tus visiones arquitectónicas.
-                    </p>
-            </div>
-        </div>
-    </main>
-    
-    <section class="elementos">
-        <div class="contenedor">
-            <img class="ventas" src="../img/logosredes/trucksvg.svg" alt="camion" />
-            <h2 class="infomation">Envios a todo el pais.</h2>
-
-        </div>
-        <span class="separador">
-        </span>
-        <div class="contenedor">
-            <img class="ventas" src="../img/logosredes/tarjeta-de-credito.png" alt="tarjetas" />
-            <h2 class="infomation">Todos los medios de pago.</h2>
-
-        </div>
-        <span class="separador">
-        </span>
-        <div class="contenedor">
-            <img class="ventas" src="../img/logosredes/configuraciones.png" alt="asesoramiento" />
-            <h2 class="infomation">Asesoramiento tecnico.</h2>
-        </div>
+    <section class="login">
+        <form id="login">
+            <h1>Iniciar sesion</h1>
+            <input id="empresa" type="text" name="empresa" placeholder="Empresa">
+            <input id="cuit" type="text" name="CUIT" placeholder="CUIT">
+            <input id="pass" type="password" name="contraseña" placeholder="Contraseña">
+            <button type="submit" value="Iniciar sesión"> Iniciar sesion</button>
+        </form>
     </section>
-    <div class="wpp">
-        <a href="https://wa.me/+5492262482550" target="_blank">
-            <img src="../img/logosredes/logo-wpp-fixed.png" target="_blank" alt="logo wpp">
-        </a>
-    </div>
+
 
     <footer>
         <form class="suscribite">
@@ -201,5 +156,3 @@
         crossorigin="anonymous"></script>
 
 </body>
-
-</html>

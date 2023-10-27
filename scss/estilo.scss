@@ -5,6 +5,7 @@
 @import "./componentes/productos";
 @import "./componentes/contacto";
 @import "./_footer";
+@import "./componentes/mayoristas";
 @import "./componentes/404";
 @import "./componentes/mixin";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -113,8 +114,9 @@ body {
 }
 /*contacto*/
 .form-contacto {
-     background-image: url(../img/productos/DSC_0109_2.jpg);}
- /*eroor 404*/
+    background-image: url(../img/productos/DSC_0109_2.jpg);
+}
+/*eroor 404*/
 .pared {
     background-image: url(../img/404/pared.jpg);
 }

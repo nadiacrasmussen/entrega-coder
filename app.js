@@ -1,4 +1,61 @@
+const productos = [
+    { nombre: "Adoquin recto", precio: 2499 },
+    { nombre: "Adoquin circular", precio: 2499 },
+    { nombre: "Ekos travertino", precio: 3149 },
+    { nombre: "Ekos zafiro", precio: 3149 },
+    { nombre: "Kebracho", precio: 3149 },
+];
 
+let carrito = [];
+
+function mostrarProductos() {
+    let productosDom = document.getElementById("productos");
+    todoslosProductos = productos.map((producto) => producto.nombre + " " + "$" + producto.precio);
+    productosDom.innerHTML = `productos: ${todoslosProductos.join("-")}`;
+}
+
+const formulario = document.getElementById("formProductos");
+formulario.addEventListener("submit", enviarProducto);
+
+function enviarProducto(e) {
+    let nombreProducto = document.getElementById("productoInput").value;
+    e.preventDefault();
+    let encontrado;
+    for (const item of productos) {
+        if (item.nombre === nombreProducto) {
+            carrito.push(item);
+            encontrado = true
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        alert("Ese producto no se encuentra en nuestro stock.");
+    }
+
+    let carritoDom = document.getElementById("carritoDom");
+
+    if(carrito){
+        carritoDom.innerHTML = carrito.map((producto) => producto.nombre + " " + "$" + producto.precio);
+    }
+
+
+    console.log(nombreProducto);
+}
+
+
+function completarVenta(e){
+    e.preventDefault();
+    console.log(carrito)
+
+    const total = carrito.reduce((acc, el) => acc + el.precio , 0);
+
+    console.log(total)
+    localStorage.setItem("carrito",carrito)
+}
+
+mostrarProductos();
+/* 
 const productos = [
     { nombre: "Adoquin recto", precio: 2499 },
     { nombre: "Adoquin circular", precio: 2499 },
@@ -60,3 +117,5 @@ if (metodoPago === "Efectivo" || metodoPago === "Transferencia") {
 } else {
     alert("No se aplica descuento. El total de la compra es: " + total);
 }
+
+ */
