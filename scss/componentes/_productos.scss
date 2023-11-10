@@ -10,7 +10,10 @@
 .card {
     box-shadow: $sombras;
 }
-
+.productos{
+    display: flex;
+    gap: 10px;
+}
 .producto {
     width: 400px;
     display: flex;

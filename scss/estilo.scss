@@ -19,7 +19,16 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: rgb(230, 227, 227);
 }
+.usd{
+    background-color: rgb(238, 227, 227);
+    text-decoration: none;
+    font-size: 1rem;
 
+}
+.dolares{
+    display: flex;
+    flex-wrap: wrap;
+}
 .slide {
     margin: 15px;
     max-width: 100%;

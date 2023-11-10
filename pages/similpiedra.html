@@ -21,8 +21,8 @@
         <div class="container-kamak">
             <img class="logo" src="../img/img-marca/kamak-revestimientos.png" alt="Kamak revestimientos" />
 
-            <form class="d-flex " role="search">
-                <input class="form-control me-5 m-2 " type="search" placeholder="Buscar" aria-label="Search">
+            <form class="d-flex " role="search" id="formBuscar">
+                <input class="form-control me-5 m-2 " type="search" placeholder="Buscar" id="buscar" aria-label="Search">
                 <button class="btn btn-outline-success colorBoton" type="submit">Buscar</button>
             </form>
             <img class="cart-icon" src="../img/logosredes/cart.svg" alt="carrito">
@@ -90,171 +90,21 @@
         </div>
 
     </section>
-    <!--    <main class="image-container">
-        <div class="card" style="width: 24rem;">
-            <img src="../img/productos/ardecia-ambar.webp" class="card-img-top" alt="Ardesia ambar">
-            <div class="card-body">
-                <h5 class="card-title">Ardesia ambar</h5>
-                <p class="card-text">
-                <ul>
-                    <li>Cantidad: 8 Bultos por M2</li>
-                    <li>Color: Ambar.</li>
-                    <li>Uso: Exterior/Interior.</li>
-                </ul>
-                </p>
-                <a href="#"(onclick)="agregarCarrito('ardesia ambar')" class="btn btn-primary solicitud">Solicitá tu resupuesto</a>
-            </div>
-        </div>
-        <div class="card" style="width: 24rem;">
-            <img src="../img/productos/ardesia-turmalina.png" class="card-img-top" alt="Ardesia turmalina">
-            <div class="card-body">
-                <h5 class="card-title">Ardesia turmalina</h5>
-                <p class="card-text">
-                <ul>
-                    <li>Cantidad: 8 Bultos por M2</li>
-                    <li>Color: Negro.</li>
-                    <li>Uso: Exterior/Interior.</li>
-                </ul>
-                </p>
-                <a href="#" (onclick)="agregarCarrito('ardesia ambar')"  class="btn btn-primary  solicitud">Solicitá tu presupuesto</a>
-            </div>
-        </div>
-        <div class="card" style="width: 24rem;">
-            <img src="../img/productos/ekostravertino.png" class="card-img-top" alt="Ekos travertino">
-            <div class="card-body">
-                <h5 class="card-title">Ekos travertino</h5>
-                <p class="card-text">
-                <ul>
-                    <li>Cantidad: 8 Bultos por M2.</li>
-                    <li>Color: Arena.</li>
-                    <li>Uso: Exterior/Interior.</li>
-                </ul>
-                </p>
-                <a href="#" class="btn btn-primary solicitud">Solicitá tu presupuesto</a>
-            </div>
-        </div>
-        <div class="card" style="width: 24rem;">
-            <img src="../img/productos/ekos-zafiro.webp" class="card-img-top" alt="Ekos zafiro">
-            <div class="card-body">
-                <h5 class="card-title">Ekos zafiro</h5>
-                <p class="card-text">
-                <ul>
-                    <li>Cantidad: 8 Bultos por M2.</li>
-                    <li>Color: Negro-Beige.</li>
-                    <li>Uso: Exterior/Interior.</li>
-                </ul>
-                </p>
-                <a href="#" class="btn btn-primary solicitud">Solicitá tu resupuesto</a>
-            </div>
-        </div>
-        <div class="card" style="width: 24rem;">
-            <img src="../img/productos/geo-kubik.png" class="card-img-top" alt="Geo kubik">
-            <div class="card-body">
-                <h5 class="card-title">Geo kubik</h5>
-                <p class="card-text">
-                <ul>
-                    <li>Cantidad: 8 Bultos por M2.</li>
-                    <li>Color: Beige.</li>
-                    <li>Uso: Exterior/Interior.</li>
-                </ul>
-                </p>
-                <a href="#" class="btn btn-primary  solicitud">Solicitá tu presupuesto</a>
-            </div>
-        </div>
-        <div class="card" style="width: 24rem;">
-            <img src="../img/productos/kamba-arena.webp" class="card-img-top" alt="kamba arena">
-            <div class="card-body">
-                <h5 class="card-title">Kamba arena</h5>
-                <p class="card-text">
-                <ul>
-                    <li>Cantidad: 8 Bultos por M2.</li>
-                    <li>Color: Arena.</li>
-                    <li>Uso: Exterior/Interior.</li>
-                </ul>
 
-                </p>
-                <a href="#" class="btn btn-primary solicitud">Solicitá tu resupuesto</a>
-            </div>
-        </div>
-        <div class="card" style="width: 24rem;">
-            <img src="../img/productos/kamba-topacio.png" class="card-img-top" alt="Kamba topacio">
-            <div class="card-body">
-                <h5 class="card-title">Kamba topacio</h5>
-                <p class="card-text">
-                <ul>
-                    <li>Cantidad: 8 Bultos por M2.</li>
-                    <li>Color: Gris-ladrillo-blanco.</li>
-                    <li>Uso: Exterior/Interior.</li>
-                </ul>
-                </p>
-                <a href="#" class="btn btn-primary  solicitud">Solicitá tu presupuesto</a>
-            </div>
-        </div>
-        <div class="card" style="width: 24rem;">
-            <img src="../img/productos/kubik-onix.png" class="card-img-top" alt="Kubik onix">
-            <div class="card-body">
-                <h5 class="card-title">Kubik onix</h5>
-                <p class="card-text">
-                <ul>
-                    <li>Cantidad: 8 Bultos por M2.</li>
-                    <li>Color: Gris.</li>
-                    <li>Uso: Exterior/Interior.</li>
-                </ul>
-                </p>
-                <a href="#" class="btn btn-primary solicitud">Solicitá tu presupuesto</a>
-            </div>
-        </div>
 
-        <div class="card" style="width: 24rem;">
-            <img src="../img/productos/umha-onix.png" class="card-img-top" alt="Umha onix">
-            <div class="card-body">
-                <h5 class="card-title">Umha onix</h5>
-                <p class="card-text">
-                <ul>
-                    <li>Cantidad: 8 Bultos por M2.</li>
-                    <li>Color: Gris-ladrillo-blanco.</li>
-                    <li>Uso: Exterior/Interior.</li>
-                </ul>
-                </p>
-                <a href="#" class="btn btn-primary  solicitud">Solicitá tu presupuesto</a>
-            </div>
-        </div>
-        <div class="card" style="width: 24rem;">
-            <img src="../img/productos/ladrillo-visto.png" class="card-img-top" alt="Ladrillo visto">
-            <div class="card-body">
-                <h5 class="card-title">Ladrillo visto</h5>
-                <p class="card-text">
-                <ul>
-                    <li>Cantidad: 8 Bultos por M2.</li>
-                    <li>Color: Negro.</li>
-                    <li>Uso: Exterior/Interior.</li>
-                </ul>
-                </p>
-                <a href="#" class="btn btn-primary solicitud">Solicitá tu presupuesto</a>
-            </div>
-        </div>
-    </main> -->
 
 
     <main>
 
-        <h1>Te mostramos a continuacion nuestra linea de productos</h1>
-
-        <div id="productos"></div>
+        <div id="productos" class="productos"></div>
 
 
-        <h2> Agregue los producto</h2>
-        <form action="" id="formProductos">
-            <input type="text" placeholder="Nombre producto" id="productoInput">
-            <button type="submit">Enviar</button>
-        </form>
-
-
-
+       
 
         <div id="carritoDom"></div>
-        <button type="button" onclick="completarVenta(event)" >Enviar</button>
+        <button type="button" onclick="completarVenta(event)">Enviar</button>
 
+        <div id="dolares"></div>
 
     </main>
 
