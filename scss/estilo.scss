@@ -19,16 +19,25 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: rgb(230, 227, 227);
 }
-.usd{
-    background-color: rgb(238, 227, 227);
-    text-decoration: none;
+.usd {
+    color: #fff;
+    text-decoration-line: underline;
+    border-radius: 3px;
     font-size: 1rem;
+    background-color: $color;
+}
+.cotizaciones {
+    flex-direction: row;
+}
+.dolares {
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 200px;
+    background-color: white;
+    flex-direction: row;
+    text-align: center;
+}
 
-}
-.dolares{
-    display: flex;
-    flex-wrap: wrap;
-}
 .slide {
     margin: 15px;
     max-width: 100%;

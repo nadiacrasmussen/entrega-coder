@@ -1,9 +1,9 @@
 const productos = [
-    { nombre: "Kubik onix", precio: 5640, Uso: "Exterior/Interior", imagen: "../img/productos/kubik-onix.png" },
-    { nombre: "Adoquin circular", precio: 5640, Uso: "Exterior/Interior", imagen: "../img/productos/adoquin-circular.png" },
-    { nombre: "Ladrillo visto", precio: 5640, Uso: "Exterior/Interior", imagen: "../img/productos/ladrillo-visto.png" },
-    { nombre: "Umha onix", precio: 5640, Uso: "Exterior/Interior", imagen: "../img/productos/umha-onix.png" },
-    { nombre: "Kebracho", precio: 5640, Uso: "Exterior/Interior", imagen: "../img/productos/kebracho.png" },
+    { nombre: "Kubik onix", precio: 45, Uso: "Exterior/Interior", imagen: "../img/productos/kubik-onix.png" },
+    { nombre: "Adoquin circular", precio: 45, Uso: "Exterior/Interior", imagen: "../img/productos/adoquin-circular.png" },
+    { nombre: "Ladrillo visto", precio: 96, Uso: "Exterior/Interior", imagen: "../img/productos/ladrillo-visto.png" },
+    { nombre: "Umha onix", precio: 35, Uso: "Exterior/Interior", imagen: "../img/productos/umha-onix.png" },
+    { nombre: "Kebracho", precio: 30, Uso: "Exterior/Interior", imagen: "../img/productos/kebracho.png" },
 ];
 let productosFilter = productos;
 
@@ -11,7 +11,7 @@ let carrito = [];
 function mostrarProductos() {
     let productosDom = document.getElementById("productos");
 
-    productosDom.innerHTML =""
+    productosDom.innerHTML = "";
     for (let index = 0; index < productosFilter.length; index++) {
         const producto = productosFilter[index];
         productosDom.innerHTML += `
@@ -36,14 +36,13 @@ function mostrarProductos() {
 const formulario = document.getElementById("formBuscar");
 formulario.addEventListener("submit", buscar);
 function buscar() {
-   
     const busqueda = document.getElementById("buscar").value;
 
-    productosFilter=productos.filter((producto )=>{
-        return producto.nombre.toLocaleLowerCase() == busqueda.toLocaleLowerCase()
-    })
+    productosFilter = productos.filter((producto) => {
+        return producto.nombre.toLocaleLowerCase() == busqueda.toLocaleLowerCase();
+    });
     mostrarProductos();
-} 
+}
 function enviarProducto(e, nombreProducto) {
     e.preventDefault();
     let encontrado;
@@ -54,7 +53,6 @@ function enviarProducto(e, nombreProducto) {
             break;
         }
     }
-
     if (!encontrado) {
         alert("Ese producto no se encuentra en nuestro stock.");
     }
@@ -93,10 +91,11 @@ function mostrarDolares() {
                     for (let index = 0; index < dolares.length; index++) {
                         const dolar = dolares[index];
                         dolaresDiv.innerHTML += `
+                      
                         <div class="dolares">
-                        <ul>
-                        <li class="usd">${dolar.moneda} ${dolar.nombre} Compra: ${dolar.compra} Venta: ${dolar.venta} <li>
-                        <ul>
+                         <div class="usd">${dolar.moneda} ${dolar.nombre} </div> 
+                        <div class="cotizaciones"> <div class="compra-div">Compra: ${dolar.compra}</div>
+                         <div class="venta-div"> Venta: ${dolar.venta} 
                         </div>
                          `;
                     }
@@ -107,4 +106,3 @@ function mostrarDolares() {
 }
 mostrarDolares();
 mostrarProductos();
-
